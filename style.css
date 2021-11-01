@@ -1,0 +1,112 @@
+html{
+    height : 100%;
+    width : 100%;
+    padding : 0px;
+    margin : 0px;
+}
+
+body{
+    padding : 0px;
+    margin : 0px;
+    text-align: center;
+    box-sizing: border-box;
+    height : 100%;
+    width : 100%;
+}
+
+.box{
+    border : 5px solid black;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    margin : 5px;
+}
+
+.test{
+    width : 200px;
+    height : 200px;
+}
+
+@media screen and (orientation: landscape){
+    .container {
+        height : 100%;
+        width : 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% auto auto auto 25%;
+        grid-template-areas: 
+        "A B"
+        "C C"
+        "D D"
+        "E E"
+        "F G";
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 900px){
+    .container {
+        height : 100%;
+        width : 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto 25% auto;
+        grid-template-areas: 
+        "A B C C"
+        "D D D E"
+        "F G G G";
+    }
+}
+
+@media screen and (orientation: portrait){
+    .container {
+        height : 100%;
+        width : 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "A A"
+        "B B"
+        "C C"
+        "D D"
+        "E E"
+        "F G";
+    }
+}
+
+.A{
+    grid-area: A;
+    background-color: red;
+}
+
+.B{
+    grid-area: B;
+    background-color : blue;
+}
+
+.C{
+    grid-area: C;
+    background-color : green;
+}
+
+.D{
+    grid-area: D;
+    background-color : yellow;
+}
+
+.E{
+    grid-area : E;
+    background-color : purple;
+}
+
+.F{
+    grid-area : F;
+    background-color : grey;
+}
+
+.G{
+    grid-area : G;
+    background-color : cyan;
+}
