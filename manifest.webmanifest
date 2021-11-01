@@ -11,5 +11,5 @@
     ],
     "name": "moje_pwa",
     "short_name": "PWA",
-    "start_url": "/index.html"
+    "start_url": "./index.html"
 }
