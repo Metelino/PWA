@@ -24,6 +24,10 @@ if ('serviceWorker' in navigator) {
 let deferredPrompt;
 const addBtn = document.querySelector('.install');
 
+setTimeout(()=>{
+  alert("Witaj na stronie!");
+}, 250);
+
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
